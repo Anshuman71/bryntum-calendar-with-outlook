@@ -20,7 +20,7 @@ export const graphConfig = {
     "https://graph.microsoft.com/v1.0/me/events?$select=subject,bodyPreview,organizer,attendees,start,end,isAllDay,categories,subject",
 };
 
-// read information from MS Graph endpoint
+// read information from Microsoft Graph endpoint
 export async function callMsGraph(endpoint: string, accessToken: string) {
   const headers = new Headers();
   const bearer = `Bearer ${accessToken}`;
